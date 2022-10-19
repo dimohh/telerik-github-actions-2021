@@ -14,7 +14,7 @@ jobs:
     - name: Test which OS the runner is using
       run: echo "This job is now running on ${{ runner.os }} server hosted by Github!"
     - name: Which branch is checked out 
-      run: echo "The name of the branch is ${{ github.ref. }} in repository ${{ github.repository }}"
+      run: echo "The name of the branch is ${{ github.ref }} in repository ${{ github.repository }}"
     - name: Check out repository code
       uses: actions/checkout@v2
     - run: echo "The ${{ github.repository }} has been clonned to the runner."
