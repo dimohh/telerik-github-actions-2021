@@ -8,6 +8,18 @@ on:
     - 'lint_test.py'
     
 jobs:
+  integration-test:
+    runs-on: ubuntu-latest
+    container:
+      image: python:3.9-alpine
+      options: --cpus 1
+    steps:
+       - name: integration test
+         uses: actions/checkout@v2 
+       - name: integration test
+         run: python factorial.py
+      
+      
   lint:
     runs-on: ubuntu-latest
     steps:
