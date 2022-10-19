@@ -32,11 +32,11 @@ jobs:
     - name: Build container
       run: |
         echo "Building docker container...."
-        sleep 60
+        sleep 1
         echo "Docker container build successfully"
     - name: Deploy
       run: |
         echo "Deploying to our imagiri cluster"
-        sleep 60
+        sleep 1
         echo  "App has been deployed successfully"
-    - run: echo "This job`s status is ${{ job.status }}."
+    - run: echo "This job`s status is ${{ job.status }} ."
