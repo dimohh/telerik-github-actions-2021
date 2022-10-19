@@ -51,4 +51,4 @@ jobs:
         echo "Deploying to our imagiri cluster"
         sleep 1
         echo  "App has been deployed successfully"
-    - run: echo "This job`s status is ${{ job.status }} ."
+    - run: echo "This job status is ${{ job.status }} ."
